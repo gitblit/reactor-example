@@ -1,0 +1,14 @@
+#
+# Stork Packaging
+# https://github.com/fizzed/java-stork
+#
+name: "reactor-app"
+domain: "com.gitblit.reactor"
+display_name: "reactor-app"
+short_description: "com.gitblit.reactor:reactor-app"
+type: DAEMON
+main_class: "com.gitblit.reactor.Launcher"
+platforms: [ WINDOWS, LINUX, MAC_OSX ]
+min_java_version: "1.8"
+min_java_memory: 1024
+symlink_java: true
