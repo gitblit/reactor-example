@@ -26,72 +26,84 @@
             <groupId>com.gitblit.fathom</groupId>
             <artifactId>fathom-core</artifactId>
             <version>${fathom.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.gitblit.fathom</groupId>
             <artifactId>fathom-rest</artifactId>
             <version>${fathom.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.gitblit.fathom</groupId>
             <artifactId>fathom-rest-security</artifactId>
             <version>${fathom.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.gitblit.fathom</groupId>
             <artifactId>fathom-rest-swagger</artifactId>
             <version>${fathom.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.gitblit.fathom</groupId>
             <artifactId>fathom-jmx</artifactId>
             <version>${fathom.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.gitblit.fathom</groupId>
             <artifactId>fathom-jcache</artifactId>
             <version>${fathom.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.infinispan</groupId>
             <artifactId>infinispan-jcache</artifactId>
             <version>7.2.2.Final</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>ro.pippo</groupId>
             <artifactId>pippo-pebble</artifactId>
             <version>${pippo.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>ro.pippo</groupId>
             <artifactId>pippo-jaxb</artifactId>
             <version>${pippo.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>ro.pippo</groupId>
             <artifactId>pippo-gson</artifactId>
             <version>${pippo.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>foundation</artifactId>
             <version>5.5.2</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>font-awesome</artifactId>
             <version>4.5.0</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -128,7 +140,7 @@
             <plugin>
                 <groupId>com.github.chrischristo</groupId>
                 <artifactId>capsule-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1</version>
                 <executions>
                     <execution>
                         <goals>
@@ -138,7 +150,8 @@
                             <appClass>com.gitblit.reactor.Launcher</appClass>
                             <chmod>true</chmod>
                             <trampoline>false</trampoline>
-                            <types>thin</types>
+                            <types>fat</types>
+                            <transitive>false</transitive>
                         </configuration>
                     </execution>
                 </executions>
